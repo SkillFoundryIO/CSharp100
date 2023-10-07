@@ -1,13 +1,12 @@
-﻿// declare length and width variables
-decimal length, width;
+﻿decimal triangleBase, triangleHeight;
 
-// prompt for length
-Console.Write("Enter length: ");
-length = decimal.Parse(Console.ReadLine());
+// Prompt and store base
+Console.Write("Enter triangle base: ");
+triangleBase = decimal.Parse(Console.ReadLine());
 
-// prompt for width
-Console.Write("Enter width: ");
-width = decimal.Parse(Console.ReadLine());
+// Prompt and store height
+Console.Write("Enter triangle height: ");
+triangleHeight = decimal.Parse(Console.ReadLine());
 
-// output area to console
-Console.WriteLine("The area of the rectangle is " + (length * width).ToString());
+// Print area of rectangle
+Console.WriteLine("The area of the triangle is: " + (0.5M * triangleBase * triangleHeight));
