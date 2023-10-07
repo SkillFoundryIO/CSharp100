@@ -1,4 +1,4 @@
-﻿// Double backslash makes a single line comment
+﻿// Double forward-slash makes a single line comment
 
 /*
  * This is a multiple
