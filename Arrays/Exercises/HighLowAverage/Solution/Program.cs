@@ -1,6 +1,7 @@
 ﻿int length;
 Random rng = new Random();
-int low = 0, high = 0;
+// preset low and high to max/min
+int low = 1000, high = -1000;
 double sum=0;
 int[] numbers;
 
