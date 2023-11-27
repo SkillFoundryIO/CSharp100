@@ -73,7 +73,7 @@ while (true)
             }
             else
             {
-                Console.WriteLine($"Locker {lockerNumber} contents: Laptop");
+                Console.WriteLine($"Locker {lockerNumber} contents: {lockers[lockerIndex]}");
             }
         }
         else if (userChoice == 2) // Rent Locker
@@ -81,7 +81,7 @@ while (true)
             // is the locker already rented?
             if (lockers[lockerIndex] != null)
             {
-                Console.WriteLine("Sorry, but locker 10 has already been rented!");
+                Console.WriteLine($"Sorry, but locker {lockerNumber} has already been rented!");
             }
             else
             {

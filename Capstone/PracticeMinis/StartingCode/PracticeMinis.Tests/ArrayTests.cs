@@ -62,7 +62,7 @@
         public void RotateLeftTest(int[] numbers, int[] expected)
         {
             var actual = ArrayExercises.RotateLeft(numbers);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
 
@@ -72,7 +72,7 @@
         public void ReverseTest(int[] numbers, int[] expected)
         {
             var actual = ArrayExercises.Reverse(numbers);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
         [TestCase(new int[] { 1, 2, 3 }, new int[] { 3, 3, 3 })]
@@ -81,7 +81,7 @@
         public void HigherWinsTest(int[] numbers, int[] expected)
         {
             var actual = ArrayExercises.HigherWins(numbers);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
         [TestCase(new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 2, 5 })]
@@ -90,7 +90,7 @@
         public void GetMiddleTest(int[] a, int[] b, int[] expected)
         {
             var actual = ArrayExercises.GetMiddle(a, b);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
         [TestCase(new int[] { 2, 5 }, true)]
@@ -108,7 +108,7 @@
         public void KeepLastTest(int[] numbers, int[] expected)
         {
             var actual = ArrayExercises.KeepLast(numbers);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
         [TestCase(new int[] { 2, 2, 3 }, true)]
@@ -126,7 +126,7 @@
         public void Fix23Test(int[] numbers, int[] expected)
         {
             var actual = ArrayExercises.Fix23(numbers);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
 
         [TestCase(new int[] { 1, 3, 4, 5 }, true)]
@@ -144,7 +144,7 @@
         public void Make2Test(int[] a, int[] b, int[] expected)
         {
             var actual = ArrayExercises.Make2(a, b);
-            Assert.IsTrue(ArrayValuesMatch(actual, expected));
+            Assert.That(ArrayValuesMatch(actual, expected));
         }
     }
 }

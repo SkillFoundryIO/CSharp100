@@ -14,15 +14,12 @@ do
     input = Console.ReadLine().ToUpper();
 
     // if Q break loop
-    if (input == "Q")
+    if (input != "Q")
     {
-        break;
+        // parse and add to total
+        total += int.Parse(input);
     }
-
-    // parse and add to total
-    total += int.Parse(input);
-    // same as total = total + int.Parse(input);
-} while (true);
+} while (input != "Q");
 
 // print result
 Console.WriteLine($"The sum of the numbers is {total}.");

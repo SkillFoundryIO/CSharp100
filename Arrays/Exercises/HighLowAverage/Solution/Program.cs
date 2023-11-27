@@ -1,6 +1,6 @@
 ﻿int length;
 Random rng = new Random();
-// preset low and high to max/min
+// preset the low to the max and the high to the min so they must be replaced.
 int low = 1000, high = -1000;
 double sum=0;
 int[] numbers;
@@ -26,7 +26,6 @@ do
 } while (true);
 
 numbers = new int[length];
-
 
 for (int i = 0; i < numbers.Length; i++)
 {

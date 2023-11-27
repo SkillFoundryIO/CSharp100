@@ -41,7 +41,7 @@ do
 // prompt for frequency
 do
 {
-    Console.Write("Enter Frequency [(D)aily, (W)eekly, (M)onthly, (Y)early]: ");
+    Console.Write("Enter Frequency [(D)aily, (W)eekly, (M)onthly, (Yearly)]: ");
     frequency = Console.ReadLine().ToUpper();
 
     if (frequency == "D" || frequency == "W" || frequency == "M" || frequency == "Y")
